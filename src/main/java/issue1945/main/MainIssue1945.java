@@ -1,11 +1,11 @@
-package main;
+package issue1945.main;
 
-import implementations.Sheep;
-import interfaces.HairType;
-import interfaces.HairTypeRenderer;
-import interfaces.HairyAnimal;
+import issue1945.implementations.Sheep;
+import issue1945.interfaces.HairType;
+import issue1945.interfaces.HairTypeRenderer;
+import issue1945.interfaces.HairyAnimal;
 
-public class MainClass {
+public class MainIssue1945 {
 	
 	private final HairyAnimal sheep = new Sheep();
 	

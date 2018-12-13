@@ -1,6 +1,6 @@
-package implementations;
-import interfaces.HairTypeRenderer;
-import interfaces.HairyAnimal;
+package issue1945.implementations;
+import issue1945.interfaces.HairTypeRenderer;
+import issue1945.interfaces.HairyAnimal;
 
 public class WoolRenderer extends HairTypeRenderer<HairTypeWool> {
 	

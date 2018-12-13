@@ -12,7 +12,7 @@ import com.github.javaparser.symbolsolver.JavaSymbolSolver;
 import com.github.javaparser.symbolsolver.model.resolution.TypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
-public class TestJavaParser {
+public class TestIssue1945 {
 	
 	@Test
 	public void testChoke() throws FileNotFoundException {
@@ -21,7 +21,7 @@ public class TestJavaParser {
 		JavaParser.getStaticConfiguration().setSymbolResolver(symbolSolver);
 		
 		
-		CompilationUnit source = JavaParser.parse(new File("src/main/java/main/MainClass.java"));
+		CompilationUnit source = JavaParser.parse(new File("src/main/java/issue1945/main/MainIssue1945.java"));
 		boolean failed = false;
 		
 		for (MethodCallExpr mce : source.findAll(MethodCallExpr.class)) {
