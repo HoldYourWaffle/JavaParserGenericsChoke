@@ -21,7 +21,7 @@ public class TestIssue1964 {
 		JavaParser.getStaticConfiguration().setSymbolResolver(symbolSolver);
 		
 		
-		CompilationUnit source = JavaParser.parse(new File("src/main/java/issueXXXX/main/MainIssueXXXX.java"));
+		CompilationUnit source = JavaParser.parse(new File("src/main/java/issue1964/main/MainIssue1964.java"));
 		boolean failed = false;
 		
 		for (MethodCallExpr mce : source.findAll(MethodCallExpr.class)) {

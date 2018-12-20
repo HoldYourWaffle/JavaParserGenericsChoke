@@ -2,9 +2,10 @@ apply plugin: 'java'
 
 repositories {
 	mavenCentral()
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
 	testCompile 'junit:junit:4.12'
-	testCompile 'com.github.javaparser:javaparser-symbol-solver-core:3.7.0'
+	testCompile 'com.github.javaparser:javaparser:-SNAPSHOT'
 }
